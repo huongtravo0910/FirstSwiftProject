@@ -1,20 +1,19 @@
 # Marvel API App Example
 This is my first swift project, which uses Marvel API
 
-##HOW TO USE
-
-###Clone this repo
+### HOW TO USE
+### Clone this repo
 Choose a folder project in your system and switch in cd [folder path]
 Clone the repo in your folder git clone https://github.com/huongtravo0910/MarvelAPIExample.git
 
-###Create an dev account on Marvel web if you haven't had one yet
+### Create an dev account on Marvel web if you haven't had one yet
 Sign up an account on `https://developer.marvel.com` .
 Since you sign up successfully, you will be provided a public key and a private key. Go to my developer account page to get the keys. Then put the them into your code 
 
 Now the app is ready to run.
 
 
-###Run test by command line
+### Run test by command line
 * For all tests: 
 ```
 xcodebuild test \
