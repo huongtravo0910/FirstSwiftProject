@@ -48,7 +48,6 @@
 		5BF8378C26CD592000846A1C /* ComicServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF8378B26CD592000846A1C /* ComicServiceMock.swift */; };
 		5BF837CB26CD5B3B00846A1C /* CharacterUITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF837CA26CD5B3B00846A1C /* CharacterUITest.swift */; };
 		5BF837D726CD5B5300846A1C /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF837D626CD5B5300846A1C /* Utils.swift */; };
-		5BF837F526CD624E00846A1C /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF837F426CD624E00846A1C /* Credentials.swift */; };
 		5BF8383D26CD62DA00846A1C /* ComicUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF8383C26CD62DA00846A1C /* ComicUITests.swift */; };
 /* End PBXBuildFile section */
 
@@ -131,7 +130,6 @@
 		5BF837CA26CD5B3B00846A1C /* CharacterUITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterUITest.swift; sourceTree = "<group>"; };
 		5BF837CC26CD5B3B00846A1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5BF837D626CD5B5300846A1C /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
-		5BF837F426CD624E00846A1C /* Credentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
 		5BF8383A26CD62DA00846A1C /* ComicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ComicUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BF8383C26CD62DA00846A1C /* ComicUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicUITests.swift; sourceTree = "<group>"; };
 		5BF8383E26CD62DA00846A1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -215,7 +213,6 @@
 				5BF836C826CD4D7000846A1C /* Assets.xcassets */,
 				5BF836CD26CD4D7000846A1C /* Info.plist */,
 				5BF836CA26CD4D7000846A1C /* Preview Content */,
-				5BF837F426CD624E00846A1C /* Credentials.swift */,
 			);
 			path = Marvel_API_Ex_App;
 			sourceTree = "<group>";
@@ -620,7 +617,6 @@
 				5BF8372626CD54CE00846A1C /* CharacterRow.swift in Sources */,
 				5BF836E526CD528D00846A1C /* AppViewModel.swift in Sources */,
 				5BF836C726CD4D6900846A1C /* ContentView.swift in Sources */,
-				5BF837F526CD624E00846A1C /* Credentials.swift in Sources */,
 				5BF8370326CD53A400846A1C /* ComicPage.swift in Sources */,
 				5BF836F726CD532700846A1C /* WelcomeScreen.swift in Sources */,
 				5BF8372326CD54C000846A1C /* CharacterPage.swift in Sources */,
