@@ -8,7 +8,7 @@ Clone the repo in your folder git clone https://github.com/huongtravo0910/Marvel
 
 ### Create an dev account on Marvel web if you haven't had one yet
 Sign up an account on `https://developer.marvel.com` .
-Since you sign up successfully, you will be provided a public key and a private key. Go to my developer account page to get the keys. Then put the them into your code 
+Since you sign up successfully, you will be provided a public key and a private key. Go to my developer account page to get the keys. Then put the them into your code.
 
 Now the app is ready to run.
 
