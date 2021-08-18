@@ -1,21 +1,21 @@
 //
 //  ContentView.swift
-//  Marvel_API_Ex_App
+//  Marvel_APIApp
 //
-//  Created by Tra Vo on 18/08/2021.
+//  Created by Tra Vo on 18/07/2021.
 //
 
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        WelcomeScreen()
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .previewDevice("iPhone 11")
     }
 }

@@ -1,0 +1,62 @@
+//
+//  ComicRow.swift
+//  Marvel_APIApp
+//
+//  Created by Tra Vo on 25/07/2021.
+//
+
+import SwiftUI
+import SDWebImageSwiftUI
+
+struct ComicRow: View {
+    var character : Comic
+    var body: some View{
+        HStack(alignment: .top, spacing: 15){
+            WebImage(url: extractImage(data: character.thumbnail)).resizable().aspectRatio(contentMode: /*@START_MENU_TOKEN@*/.fill/*@END_MENU_TOKEN@*/).frame(width: 150, height: 150).cornerRadius(8)
+            
+            VStack(alignment: .leading, spacing: 8, content: {
+                Text(character.title).font(.title3).fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/).accessibility(identifier: "comic row")
+                if let description = character.description {
+                    Text(description).font(.caption).foregroundColor(.gray).lineLimit(4).multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
+                }
+                ///Links
+                HStack(spacing: 10){
+                    ForEach(character.urls, id: \.self){
+                        data in
+                        
+                        NavigationLink(
+                            destination: WebView(url: extractURL(data: data)).navigationTitle(extractURLType(data: data)).accessibility(identifier: "comic_web_view"),
+                            label: {
+                                Text(extractURLType(data: data))
+                            })
+                    }
+                }
+            })
+            
+            Spacer(minLength: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/)
+        }.padding(.horizontal)
+    }
+    
+    func extractImage(data: [String:String]) -> URL{
+        //combining both and forming image...
+        let path = data["path"] ?? ""
+        let ext = data["extension"] ?? ""
+        return URL(string: "\(path).\(ext)")!
+    }
+    
+    func extractURL(data: [String:String]) -> URL{
+        let url = data["url"] ?? ""
+        return URL(string: url)!
+    }
+    
+    func extractURLType(data: [String:String]) -> String{
+        let type = data["type"] ?? ""
+        return type.capitalized
+    }
+}
+
+//struct ComicRow_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ComicRow()
+//    }
+//}
