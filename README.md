@@ -32,4 +32,4 @@ xcodebuild test \
   -destination 'platform=iOS Simulator,name=iPhone 11,OS=14.4' \
   -only-testing ComicUnitTest/ComicUnitTest/testLoadComicViewModelSuccessfully
 ```
-The first `ComicUnitTest` is target name, the second `ComicUnitTest` is class name, and `testLoadComicViewModelSuccessfully` is a target function.
+The first `ComicUnitTest` is a target name, the second `ComicUnitTest` is a class name, and `testLoadComicViewModelSuccessfully` is a target function.
